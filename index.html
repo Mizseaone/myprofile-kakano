@@ -13,68 +13,89 @@
 <body>
   <div class="page-wrapper">
     <!-- ヘッダー -->
-<header>
-<img src="./img/logo.png" alt="ロゴ画像">
-<nav>
-  <ul>
-    <li><a href="#section1">profile</a></li>
-    <li><a href="#section2">article</a></li>
-  </ul>
-</nav>
+    <header class="header">
+      <img src="./img/logo.png" alt="ロゴ画像" class="logoimg">
 
-</header>
+      <nav>
+        <ul>
+          <li><a href="#section1">Profile</a></li>
+          <li><a href="#section2">Articles</a></li>
+        </ul>
+      </nav>
+
+    </header>
     <main class="main-content">
       <!-- メインビジュアル -->
-<img src="./img/main_visual.jpg" alt="メイン画像" class="mainimg">
+      <img src="./img/IMG_5373.JPG" alt="メイン画像" class="mainimg">
       <!-- プロフィール セクション -->
-<section class="plofile" id="section1">
-<h1>Profile</h1>
-<h3>TARO RARETECH</h3>
-<p>
-  出身: 東京都
-趣味: アプリ開発, 散歩(公園を中心に都内を歩きまわっています)
-技術: Python, Django, JavaScript, React, AWS, GCP
-主な仕事: マネジメント, バックエンド開発
-</p>
-<img src="./img/profile.png" alt="プロフィール画像" class="profimg">
+      <section class="section" id="section1">
+        <!-- classはsectionでよかった -->
+        <!-- divいれるの忘れてた -->
+        <h1 class="section-title">Profile</h1>
+        <div class="section-profile">
 
-</section>
+          <img src="./img/googleiconmejiro.png" alt="プロフィール画像" class="profimg">
+          <!-- ここにもdiv -->
+          <div class="info-profile">
+            <h3>かかの@56期</h3>
+            <!-- brいれるの忘れてた -->
+            <p>
+      出身: 千葉<br>
+    趣味: 読書,絵描き,歴史,甘味所巡り,ゲーム,クラブ音楽など多数。 <br>
+    資格: 情報セキュリティマネジメント,CCNA,LPIC101-102,AWS CLF
+    <br>
+    主な仕事: ネットワークの運用 <br>
+    </p>
+          </div>
+        </div>
+
+      </section>
+
       <!-- 記事 セクション -->
-<section class="article" id="section2">
-<div>
-<h1>articles</h1>
-<h3>記事のタイトル</h3>
-<p>
-  こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
-</p>
-<img src="./img/article.jpg" alt="記事の画像" class="artimg">
-</div>
+      <section class="section" id="section2">
+        <h1>Articles</h1>
+        <div class="articles">
 
-<div>
-<h1>articles</h1>
-<h3>記事のタイトル</h3>
-<p>
-  こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
-</p>
-<img src="./img/article.jpg" alt="記事の画像" class="artimg">
-</div>
+          <div class="article">
+            <img src="./img/coffee-2725639_1920.jpg" alt="記事の画像" class="artimg">
+            <h3>記事のタイトル</h3>
+            <p>
+    こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+  </p>
+          </div>
 
-<div>
-<h1>articles</h1>
-<h3>記事のタイトル</h3>
-<p>
-  こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
-</p>
-<img src="./img/article.jpg" alt="記事の画像" class="artimg">
-</div>
+          <div class="article">
+            <img src="./img/cheesecakes-6351070_1920.jpg" alt="記事の画像" class="artimg">
+            <h3>記事のタイトル</h3>
+            <p>
+    こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+  </p>
+          </div>
 
-</section>
+          <div class="article">
+            <img src="./img/article.jpg" class="artimg">
+            <h3>記事のタイトル</h3>
+            <p>
+    こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+  </p>
+          </div>
+
+          <div class="article">
+            <img src="./img/coffee-5959810_1280.jpg" alt="記事の画像" class="artimg">
+            <h3>記事のタイトル</h3>
+            <p>
+    こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+  </p>
+          </div>
+        </div>
+
+      </section>
     </main>
 
     <!-- フッター -->
-<footer>
-<p>&copy;2024 Profile</p>
-</footer>
+    <footer class="footer">
+      <p>&copy;2024 Profile</p>
+    </footer>
   </div>
 </body>
 
